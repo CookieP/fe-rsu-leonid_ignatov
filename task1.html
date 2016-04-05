@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML_Advanced">
+    <title>Task 1</title>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <ul>
+        <li><a href="https://www.google.com/">Searching</a></li>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.card.com/">Card</a></li>
+        <li><a href="https://play.google.com/">Play</a></li>
+        <li><a href="https://tjournal.ru/">News</a></li>
+        <li><a href="https://dropmail.me/">Mail</a></li>
+    </ul>
+    <ol>
+        <li value="7">Searching</li>
+        <li>Card</li>
+        <li>Market</li>
+        <li>News</li>
+        <li>Dictionaries</li>
+        <li>Pictures</li>
+        <li>Yet
+            <ul>
+                <li>Flights</li>
+                <li>Auto</li>
+                <li>Poster</li>
+                <li>Blogs</li>
+            </ul>
+        </li>
+    </ol>
+    <dl>
+        <dt><i>Tag</i></dt>
+        <dd>element of Hypertext Markup Language</dd>
+        <dt><i>The Semantic Web</i></dt>
+        <dd>This direction of development of the Workd Wide Web, the aim of which is to provide information in a form suitable for maschine processing</dd>
+    </dl>
+    <hr>
+    <table border="1">
+        <caption align="center">CSS Generared content for pseudo-elements</caption>
+        <tr>
+            <th>IE</th>
+            <th>Fifefox</th>
+            <th>Chrome</th>
+            <th>Safari</th>
+            <th>Opera</th>
+            <th>iOS Safari</th>
+            <th>Opera Mini</th>
+            <th>Android Browser</th>
+            <th>Chrome for Android</th>
+        </tr>
+        <tr>
+            <td rowspan=2></td>
+            <td rowspan=4></td>
+            <td>27</td>
+            <td rowspan=3></td>
+            <td rowspan=5></td>
+            <td rowspan=4></td>
+            <td rowspan=5></td>
+            <td></td>
+            <td rowspan=5></td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>33</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>34</td>
+            <td>5.1</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>thirty</td>
+            <td>35</td>
+            <td>6.1</td>
+            <td>6.1</td>
+            <td>4.3</td>
+        </tr>
+        <tr>
+            <td>eleven</td>
+            <td>31</td>
+            <td>36</td>
+            <td>7</td>
+            <td>23</td>
+            <td>7.1</td>
+            <td>7</td>
+            <td>4.4</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td colspan=9>Method of displaying text or images before or after the given element's contents using the: before and: after pseudo-elements</td>
+        </tr>
+    </table>
+
+    <form action="http://httpbin.org/post" method="post" id="form1">
+        <fieldset>
+            <legend>Personal data</legend>
+            Surname
+            <input type="text" name="surname">
+            <br>
+            <br>
+            First Name
+            <input type="text" name="first_name">
+            <br>
+            <br>
+            Middle Name
+            <input type="text" name="middle_name">
+            <br>
+            <br>
+            You are
+            <input type="radio" name="sex" value="male" checked>Male
+            <input type="radio" name="sex" value="female">Female
+            <br>
+            <br>
+            Age
+            <input type="number" name="age" min="18" max="101">
+            <br>
+            <br>
+            Country of Residence
+            <input type="text" name="country" list="country">
+            <datalist id="country">
+                <option value="Russia">Russia</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Armenia">Armenia</option>
+            </datalist>
+            <br>
+            <br>
+            City<input type="radio" name="city" value="Ryazan" checked>Ryazan
+            <input type="radio" name="city" value="Moscow">Moscow
+            <br>
+            <br>
+            Photography<input type="file" name="photo" multiple accept="image/jpeg,image/png">
+            <hr>
+            Title
+            <select name="specialty" multiple size="8">
+                <optgroup label="Techologies">
+                    <option value="webmaster">Web Master</option>
+                    <option value="databaseadm">Database Administrator</option>
+                    <option value="computerdesign">Computer-aided design</option>
+                </optgroup>
+                <optgroup label="Finanse">
+                    <option value="economicplanning">Economic Planning</option>
+                    <option value="management">Management accounting</option>
+                    <option value="budgeting">Budgeting and planing</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            Salary
+            <input type="range" name="salary">
+            <br>
+            <br>
+            <textarea name="aboutyourself" rows="10" cols="80" placeholder="Tell us about yourself..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            Site <input type ="url" name="site">
+            <br>
+            <br>
+            Email <input type="email" name="mail">
+            <br>
+            <br>
+            Phone <input type="tel" name="phone">
+        </fieldset>
+        <br>
+        <label>Password <input type="password" name="password" required></label>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
