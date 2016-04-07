@@ -104,16 +104,13 @@
     <form action="http://httpbin.org/post" method="post" id="form1">
         <fieldset>
             <legend>Personal data</legend>
-            Surname
-            <input type="text" name="surname">
+            <label>Surname<input type="text" name="surname"></label>
             <br>
             <br>
-            First Name
-            <input type="text" name="first_name">
+            <label>First Name<input type="text" name="first_name"></label>
             <br>
             <br>
-            Middle Name
-            <input type="text" name="middle_name">
+            <label>Middle Name<input type="text" name="middle_name"></label>
             <br>
             <br>
             You are
@@ -121,12 +118,10 @@
             <input type="radio" name="sex" value="female">Female
             <br>
             <br>
-            Age
-            <input type="number" name="age" min="18" max="101">
+            <label>Age<input type="number" name="age" min="18" max="101"></label>
             <br>
             <br>
-            Country of Residence
-            <input type="text" name="country" list="country">
+            <label>Country of Residence<input type="text" name="country" list="country"></label>
             <datalist id="country">
                 <option value="Russia">Russia</option>
                 <option value="Belarus">Belarus</option>
@@ -141,9 +136,9 @@
             <input type="radio" name="city" value="Moscow">Moscow
             <br>
             <br>
-            Photography<input type="file" name="photo" multiple accept="image/jpeg,image/png">
+            <label>Photography<input type="file" name="photo" multiple accept="image/jpeg,image/png"></label>
             <hr>
-            Title
+            <label>Title
             <select name="specialty" multiple size="8">
                 <optgroup label="Techologies">
                     <option value="webmaster">Web Master</option>
@@ -155,11 +150,10 @@
                     <option value="management">Management accounting</option>
                     <option value="budgeting">Budgeting and planing</option>
                 </optgroup>
-            </select>
+            </select></label>
             <br>
             <br>
-            Salary
-            <input type="range" name="salary">
+            Salary<input type="range" name="salary">
             <br>
             <br>
             <textarea name="aboutyourself" rows="10" cols="80" placeholder="Tell us about yourself..."></textarea>
@@ -167,13 +161,13 @@
 
         <fieldset>
             <legend>Contact Information</legend>
-            Site <input type ="url" name="site">
+            <label>Site <input type ="url" name="site"></label>
             <br>
             <br>
-            Email <input type="email" name="mail">
+            <label>Email <input type="email" name="mail"></label>
             <br>
             <br>
-            Phone <input type="tel" name="phone">
+            <label>Phone <input type="tel" name="phone"></label>
         </fieldset>
         <br>
         <label>Password <input type="password" name="password" required></label>

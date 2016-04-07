@@ -12,16 +12,16 @@
         <legend>Personal data</legend>
         <table>
             <tr>
-                <td>First Name</td>
-                <td><input type="text" name="firstname"></td>
+                <td><label for="firstname">First Name</label></td>
+                <td><input type="text" name="firstname" id="firstname"></td>
             </tr>
             <tr>
-                <td>Middle name</td>
-                <td><input type="text" name="middlename"></td>
+                <td><label for="middlename">Middle name</label></td>
+                <td><input type="text" name="middlename" id="middlename"></td>
             </tr>
             <tr>
-                <td>Surname name</td>
-                <td><input type="text" name="surname"></td>
+                <td><label for="surname">Surname name</label></td>
+                <td><input type="text" name="surname" id="surname"></td>
             </tr>
             <tr>
                 <td>Sex</td>
@@ -32,13 +32,13 @@
                 </td>
             </tr>
             <tr>
-                <td>Age</td>
-                <td><input type="number" name="age" min="18" max="101"></td>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" name="age" min="18" max="101"></td>
             </tr>
             <tr>
-                <td>Country</td>
+                <td><label for="countr">Country</label></td>
                 <td>
-                    <input type="text" name="country" list="country">
+                    <input type="text" name="country" id="countr" list="country">
                     <datalist id="country">
                         <option value="Russia">Russia</option>
                         <option value="Belarus">Belarus</option>
@@ -57,16 +57,16 @@
                 </td>
             </tr>
             <tr>
-                <td>Photography</td>
-                <td><input type="file" name="img"></td>
+                <td><label for="img">Photography</label></td>
+                <td><input type="file" name="img" id="img"></td>
             </tr>
         </table>
         <hr>
         <table>
             <tr>
-                <td>Title</td>
+                <td><label for="specialty">Title</label></td>
                 <td>
-                    <select name="specialty" multiple size="8">
+                    <select name="specialty" id="specialty" multiple size="8">
                         <optgroup label="Techologies">
                             <option value="webmaster">Web Master</option>
                             <option value="databaseadm">Database Administrator</option>
@@ -82,8 +82,8 @@
                 </td>
             </tr>
             <tr>
-                <td>Salary</td>
-                <td><input type="range" name="salary"></td>
+                <td><label for="salary">Salary</label></td>
+                <td><input type="range" name="salary" id="salary"></td>
             </tr>
             <tr>
                 <td colspan="2"><textarea name="aboutyourself" rows="10" cols="80" placeholder="Tell us about yourself..."></textarea></td>
@@ -94,24 +94,24 @@
         <legend>Contact information</legend>
         <table>
             <tr>
-                <td>Site</td>
-                <td><input type="url" name="site"></td>
+                <td><label for="site">Site</label></td>
+                <td><input type="url" name="site" id="site"></td>
             </tr>
             <tr>
-                <td>E-mail</td>
-                <td><input type="email" name="email"></td>
+                <td><label for="email">E-mail</label></td>
+                <td><input type="email" name="email" id="email"></td>
             </tr>
             <tr>
-                <td>Phone</td>
-                <td><input type="tel" name="phone"></td>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" name="phone" id="phone"></td>
             </tr>
         </table>
     </fieldset>
     <br>
     <table>
         <tr>
-            <td>Password</td>
-            <td><input type="password" name="password" required></td>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="password" id="password" required></td>
         </tr>
     </table>
     <hr>
