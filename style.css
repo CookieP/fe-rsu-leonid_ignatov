@@ -1,0 +1,40 @@
+h1 {
+    background-color:rgba(255,0,0,200);
+    width: 25px;
+    height: 15px;
+    margin: 45px;
+    padding: 65px;
+}
+div {
+    height: 200px;
+    background-image: url(http://cs3.livemaster.ru/zhurnalfoto/c/b/9/150309133112.jpeg);
+    background-size: auto;
+    background-repeat: repeat;
+}
+.first{
+    font-size: 26px;
+    text-align: center;
+}
+#second{
+    font-family: Arial;
+    line-height: 10px;
+}
+.first,#second{
+    font-style: oblique;
+    letter-spacing: 3px;
+}
+#third{
+    font-variant: small-caps;
+    font-weight: 800;
+    color: rgb(241,122,53);
+    text-align: justify;
+    direction: rtl;
+}
+.fourth{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-indent: 20em;
+}
+span{
+    vertical-align: super;
+}
