@@ -1,0 +1,119 @@
+.circle{
+    height: 300px;
+    width: 400px;
+    border: 2px solid lightgray;
+    background: radial-gradient(circle, lightseagreen 35%,white 35%);
+}
+button{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(cornflowerblue, royalblue, cornflowerblue);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    border: 3px solid royalblue;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 2px royalblue;
+    padding: 2px;
+    background-clip: content-box;
+}
+.adaptive{
+    background-color: lightgray;
+    font-size: 10px;
+}
+@media screen and (max-width: 500px) {
+    .adaptive{
+        font-size: 16px;
+    }
+}
+.loader{
+    margin: 20px;
+    width: 140px;
+    color: dodgerblue;
+    font-family: Arial sans-serif;
+    font-size: 32px;
+    animation-name: loader;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    padding-right: 20px;
+}
+@keyframes loader {
+    0%{
+        border-right: 250px solid dodgerblue;
+
+    }
+    100%{
+        border-right: 1px solid transparent;
+        color: transparent;
+    }
+}
+.bounce{
+    height: 300px;
+    width: 50px;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+}
+.ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: dodgerblue;
+    animation-name: bouncing;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+@keyframes bouncing {
+    0%{
+        margin: 0 auto 250px;
+    }
+    100%{
+        margin: 250px auto 0;
+    }
+}
+.third{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 200px;
+    background: radial-gradient(white, black);
+    animation-name: third;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: normal;
+}
+@keyframes third{
+    0%{
+        background: radial-gradient(white, black);
+        border-radius: 25px;
+    }
+    16%{
+        background: radial-gradient(white, black);
+        border-radius: 0;
+        transform: none;
+    }
+    32%{
+        background: radial-gradient(white, blue);
+    }
+    48%{
+        background: radial-gradient(white, blue);
+        transform: scale(2,2) skew(20deg,40deg);
+
+    }
+    64%{
+        background: radial-gradient(white, blue);
+        transform: rotate(360deg);
+
+    }
+    82%{
+        background: radial-gradient(white, black);
+        border-radius: 0;
+        transform:none;
+    }
+    100%{
+        background: radial-gradient(white, black);
+        border-radius: 25px;
+    }
+}
