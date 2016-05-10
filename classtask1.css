@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    height: auto;
+    background-color: lightblue;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+}
+
+.content {
+    background-color: transparent;
+    border: 2px solid mediumaquamarine;
+    width: 95%;
+    margin: 20px auto;
+}
+
+h1 {
+    background-color: gold;
+    margin: 0;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+p {
+    background-color: beige;
+    padding: 20px;
+    margin: 0;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid gold;
+}

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+.menu {
+    background: url("images/bg.png") no-repeat;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left div, .right div {
+    padding: 7px 15px;
+    margin: 0 2px;
+    background-color: #3779b0;
+
+}
+
+#mail, #user {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    line-height: 15px;
+    text-align: center;
+}
+
+#page {
+    background-color: red;
+    color: white;
+    border-radius: 23px / 8px;
+    width: 46px;
+    height: 15px;
+    font-size: 10px;
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    line-height: 15px;
+    text-align: center;
+}
+
+.left #user, .left #page {
+    top: -5px;
+}
+
+#exit {
+    background-color: black;
+}
+
+#exit:before {
+    content: "Выход";
+    color: white;
+    width: 70px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.left div:hover, .right div:hover, #exit:hover {
+    background-color: red;
+}

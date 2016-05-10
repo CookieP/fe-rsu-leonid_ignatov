@@ -1,0 +1,81 @@
+.container {
+    width: 800px;
+}
+
+.float_item {
+    position: relative;
+    float: left;
+}
+
+.float_item img, .inline_item img, .flex_item img {
+    width: 220px;
+    height: 260px;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+button {
+    margin: 0px 10px 20px 10px;
+    width: 110px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.button2 {
+    float: right;
+}
+
+.hovertext {
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(60, 60, 60, 0.6);
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+}
+
+.by {
+    color: lightgrey;
+}
+
+.themeforest {
+    color: lightgreen;
+}
+
+.hovertext:hover {
+    opacity: 1;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+.inline_item {
+    position: relative;
+    display: inline-block;
+}
+
+.flex_container {
+    display: flex;
+    align-content: space-around;
+    flex-flow: row wrap;
+    width: 800px;
+    height: 700px;
+
+}
+
+.flex_item {
+    width: 260px;
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
