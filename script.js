@@ -29,8 +29,19 @@ function CalculatorV2(leftOperand) {
     };
     this.add = function (value) {
         leftOperand += value;
-        return leftOperand;
+        return this;
     };
+    this.subtract = function (value) {
+        leftOperand -= value;
+        return this;
+    };
+    this.divide = function (value) {
+        leftOperand /= value;
+        return this;
+    };
+    this.toString = function () {
+        return leftOperand;
+    }
 }
 var calc2 = new CalculatorV2(12);
 alert(calc2.multiply(2).add(3)); // 27
@@ -56,7 +67,7 @@ function CalculatorV3(leftOperand) {
 
     this.subtract = function () {
         var args = 0;
-        for (var i = 0; i < arguments.length; i++){
+        for (var i = 0; i < arguments.length; i++) {
             args = args + arguments[i];
         }
         return leftOperand - args;
