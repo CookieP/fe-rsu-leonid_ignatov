@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="JS Events" content="JavaScript_Events">
+    <title>JS Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<main>
+    <header>ToDO List</header>
+    <section class="toDoList">
+        <ul id="listItems">
+            <li><input type="checkbox" id="checkBox0" value="0" checked><label for="checkBox0">ToDO Item1</label></li>
+            <li><input type="checkbox" id="checkBox1" value="1" checked><label for="checkBox1">ToDO Item1</label></li>
+            <li><input type="checkbox" id="checkBox2" value="2" checked><label for="checkBox2">ToDO Item1</label></li>
+            <li><input type="checkbox" id="checkBox3" value="3" checked><label for="checkBox3">ToDO Item1</label></li>
+            <li><input type="checkbox" id="checkBox4" value="4" checked><label for="checkBox4">ToDO Item1</label></li>
+        </ul>
+    </section>
+    <section class="confirm" id="confirm">
+        <header>Are you sure?</header>
+        <article> Are you sure you want to add new ToDo item: <span id="todoItem"></span>?</article>
+        <div>
+            <button class="btnYes" id="btnYes">Yes</button>
+            <button class="btnNo" id="btnNo">No</button>
+        </div>
+    </section>
+    <section class="button">
+        <input type="text" id="toDoName" value="" placeholder="ToDo Text">
+        <button id="toDoSubmit">Add</button>
+    </section>
+</main>
+</body>
+</html>
